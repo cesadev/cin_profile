@@ -1,51 +1,75 @@
-# Astro Starter Kit: Minimal
+# 🎓 Portfólio Pessoal - CIn/UFPE
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Este repositório contém o código-fonte da minha página pessoal e portfólio acadêmico, desenvolvido para a disciplina de **Desenvolvimento de Software (CIN0136-SI)** do Centro de Informática da UFPE.
 
-<!-- ASTRO:REMOVE:START -->
+---
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## 🔗 Links de Entrega
 
-<!-- ASTRO:REMOVE:END -->
+* 🌐 **Página Pessoal Publicada (CIn/UFPE):** [https://cin.ufpe.br/~ccsl](https://cin.ufpe.br/~ccsl)
+* 🐙 **Repositório do GitHub:** [https://github.com/cesadev/cin_profile](https://github.com/cesadev/cin_profile)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## 👤 Informações do Aluno
 
-Inside of your Astro project, you'll see the following folders and files:
+* **Nome Completo:** Caio Cesar Souza de Lira
+* **Curso:** Sistemas de Informação (CIn-UFPE)
+* **Disciplina:** Desenvolvimento de Software (CIN0136-SI)
+* **Contato:** `ccsl@cin.ufpe.br`
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+---
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🛠️ Tecnologias e Arquitetura
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+* **React (JSX):** Componentização da interface (`Home.jsx`, `Sobre.jsx`, `Portfolio.jsx`).
+* **Vite:** Utilizado como motor de bundling, dev server e ferramenta de build.
+* **Astro (v4):** Framework para orquestração da arquitetura e integração com React.
+* **SSG (Static-Site Generation):** O projeto compila todas as páginas React em HTML/CSS estáticos durante o build.
+* **MPA (Multi-Page Application):** Estrutura de múltiplas páginas independentes (`index.astro`, `sobre.astro`, `portfolio.astro`).
+* **Identidade Visual CIn-UFPE:** Estilização inspirada nas cores institucionais do CIn (Vermelho `#DB1E2F` e Grafite `#231F20`).
 
-Any static assets, like images, can be placed in the `public/` directory.
+---
 
-## 🧞 Commands
+## 📁 Estrutura do Site
 
-All commands are run from the root of the project, from a terminal:
+1. **Página Inicial (`/`):** Apresentação objetiva, vínculo acadêmico com a disciplina, principais interesses em tecnologia e formas de contato.
+2. **Página "Sobre" (`/sobre`):** Detalhamento da trajetória acadêmica, habilidades técnicas, interesses e objetivos profissionais.
+3. **Página de Portfólio (`/portfolio`):** Galeria com projetos desenvolvidos nas disciplinas de IP e CAD, além de projetos pessoais.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+---
 
-## 👀 Want to learn more?
+## 📝 Documento de Reflexão e Aprendizado
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### a) Sugestão de Abordagem de Construção (Vite + React + Astro SSG)
+A combinação do Vite com o Astro permitiu utilizar componentes em React de forma simples, aproveitando a sintaxe do JSX e gerando páginas estáticas (SSG) de alta performance para a publicação no servidor do CIn.
+
+### b) Principais Dificuldades
+Minha principal dificuldade foi entender como estruturar o código, como subir o projeto no GitHub e como aplicar uma estilização útil sem desperdiçar as ferramentas que eu tinha em mãos.
+
+### c) Principais Aprendizados
+Compreensão do fluxo de produção de um site, por mais simples que seja. Utilizei bastante os commits do GitHub, entendi melhor a relação entre HTML e CSS, além de aprender conceitos práticos de React e Vite.
+
+### d) Ferramentas de IA
+Utilizei principalmente o Gemini para me ajudar a revisar os textos e a debruçar sobre a documentação do React e de sintaxes em geral. Foi minha maior consultoria de pesquisa — como tudo era muito novo, precisei pesquisar cada coisa que eu iria fazer. A maior ajuda que recebi da IA foi no entendimento da sintaxe e no aprendizado acelerado das ferramentas, permitindo afunilar o conteúdo necessário para colocá-lo em prática rapidamente.
+
+---
+
+## 🚀 Como Executar o Projeto Localmente
+
+```bash
+# 1. Clonar o repositório
+git clone [https://github.com/cesadev/cin_profile.git](https://github.com/cesadev/cin_profile.git)
+cd cin_profile
+
+# 2. Instalar dependências
+npm install
+
+# 3. Executar o servidor local de desenvolvimento
+npm run dev
+
+# 4. Gerar os arquivos estáticos para produção (SSG)
+npm run build
+
+# 5. Testar a build gerada na pasta dist/
+npm run preview
