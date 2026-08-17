@@ -16,10 +16,10 @@ export default function Home() {
             </ul>
             <h2>Formas de Contato</h2>
             <ul>
-                <li>E-mail: ccsl@cin.ufpe.br</li>
-                <li>LinkedIn: in/caiocesarlira</li>
-                <li>Discord: cesadev</li>
-                <li>GitHub: cesadev</li>
+                <li>E-mail: <a href="mailto:ccsl@cin.ufpe.br">ccsl@cin.ufpe.br</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/caiocesarlira" target="_blank" rel="noopener noreferrer">linkedin.com/in/caiocesarlira</a></li>
+                <li>Discord: <span>cesadev</span></li>
+                <li>GitHub: GitHub: <a href="https://github.com/cesadev" target="_blank" rel="noopener noreferrer">github.com/cesadev</a></li>
             </ul>
         </section>
     )
